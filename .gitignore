@@ -1,0 +1,38 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+service-account*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+*.egg-info/
+
+# Vector stores (often large + may contain embedded customer data)
+chroma_db/
+faiss_index/
+*.faiss
+*.index
+vectorstore/
+*.db
+customer_support.db
+# Data — be selective, only ignore what's real/sensitive
+data/raw/
+data/customer_data/
+*.csv
+!data/sample_data.csv   # example: allow one specific safe sample file
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE/OS
+.idea/
+.vscode/
+.DS_Store
